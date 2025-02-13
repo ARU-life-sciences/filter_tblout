@@ -11,6 +11,6 @@ dependencies = [
 
 [[package]]
 name = "hmm_tblout"
-version = "0.3.0"
+version = "0.4.21"
 source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "5e56f91edc2363e216d90a11f8a7dd171859bb55ec41badbc3adef06d6b65704"
+checksum = "da2febb80d811bec6d840559b71325d370baf17daff36c345e4a8d38a5534dd9"

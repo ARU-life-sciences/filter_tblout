@@ -4,4 +4,4 @@ version = "0.1.0"
 edition = "2021"
 
 [dependencies]
-hmm_tblout = "0.3.0"
+hmm_tblout = "0.4.21"
