@@ -4,13 +4,13 @@ version = 4
 
 [[package]]
 name = "filter_tblout"
-version = "0.1.0"
+version = "0.1.1"
 dependencies = [
  "hmm_tblout",
 ]
 
 [[package]]
 name = "hmm_tblout"
-version = "0.4.21"
+version = "0.4.22"
 source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "da2febb80d811bec6d840559b71325d370baf17daff36c345e4a8d38a5534dd9"
+checksum = "b1ff493f372cdb7813464bf1fa1fe5d37f1db144816a777ce8b90d8b0b2222d1"

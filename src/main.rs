@@ -1,6 +1,15 @@
 // Filter a HMMER tblout file by E-value threshold
 
 fn main() -> Result<(), Box<dyn std::error::Error>> {
+    if let Err(e) = run() {
+        eprintln!("Error: {}", e);
+        std::process::exit(1);
+    }
+
+    Ok(())
+}
+
+fn run() -> Result<(), Box<dyn std::error::Error>> {
     // get the command line args, only parse the
     // first one which should be a fasta file
     let args: Vec<String> = std::env::args().collect();
