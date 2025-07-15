@@ -23,7 +23,10 @@ fn main() -> Result<(), Box<dyn std::error::Error>> {
         let r = record?;
         // I care about the full e-value for hmmscan
         // OR the regular e-value for cmscan
-        let eval = r.e_value_full().unwrap_or(r.e_value().unwrap());
+        let eval = match r.e_value_full() {
+            Some(e) => e,
+            None => r.e_value().unwrap(),
+        };
 
         if eval < evalue {
             writer.write_record(&r)?;
